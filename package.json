@@ -1,0 +1,46 @@
+{
+  "name": "@marksmall/semantic-release-config",
+  "version": "1.0.0",
+  "description": "re-usable config for semantic-release",
+  "main": "release.config.js",
+  "engines": {
+    "npm": ">=9.0.0",
+    "node": ">=18.0.0"
+  },
+  "packageManager": "yarn@1.22.19",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marksmall/semantic-release-config.git"
+  },
+  "keywords": [
+    "semantic-release",
+    "config"
+  ],
+  "author": "Mark Small <marksmall@gmx.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marksmall/semantic-release-config/issues"
+  },
+  "homepage": "https://github.com/marksmall/semantic-release-config#readme",
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "release": "yarn clean && yarn && semantic-release"
+  },
+  "peerDependencies": {
+    "semantic-release": "^22.0.0"
+  },
+  "dependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.3",
+    "semantic-release": "^22.0.0"
+  },
+  "release": {
+    "extends": "./release.config.js"
+  }
+}
